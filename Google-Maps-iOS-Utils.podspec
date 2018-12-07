@@ -18,6 +18,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.dependency 'GoogleMaps'
   s.compiler_flags = '-fno-modules'
+  s.static_framework = true
 
   s.subspec 'QuadTree' do |sp|
     sp.source_files = 'src/QuadTree/**/*.{h,m}'
